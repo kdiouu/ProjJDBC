@@ -9,10 +9,10 @@ public interface ProductDAO {
 
 	List<ProductBean> findAll() throws SQLException, Exception;
 
-	ProductBean update(String name, double price, java.util.Date make, int expire, int id);
+	ProductBean update(String name, double price, java.util.Date make, int expire, int id) throws SQLException, Exception;
 
-	ProductBean create(ProductBean bean);
+	ProductBean create(ProductBean bean) throws SQLException, Exception;
 
-	boolean remove(int id);
+	boolean remove(int id) throws SQLException, Exception;
 
 }
