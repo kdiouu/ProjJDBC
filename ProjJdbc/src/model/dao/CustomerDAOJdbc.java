@@ -12,7 +12,7 @@ import model.CustomerDAO;
 public class CustomerDAOJdbc implements CustomerDAO {
 	private static final String URL = "jdbc:sqlserver://localhost:1433;database=java";
 	private static final String USERNAME = "sa";
-	private static final String PASSWORD = "passw0rd";
+	private static final String PASSWORD = "10105566";
 
 	private static final String SELECT_BY_PK = "select * from customer where custid=?";
 
@@ -52,7 +52,6 @@ public class CustomerDAOJdbc implements CustomerDAO {
 		java.sql.Date sqldate = new java.sql.Date(birth.getTime());
 		pstmt.setDate(3, sqldate);
 		pstmt.setString(4, custid);
-		System.out.println(password);
 		int updatecheck = pstmt.executeUpdate();
 		pstmt.close();
 		conn.close();
