@@ -18,7 +18,7 @@ public class CustomerService {
 
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		Connection conn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;database=java", "sa",
-				"10105566");
+				"passw0rd");
 		PreparedStatement pstmt = conn
 				.prepareStatement("select convert(varchar,password) as password from customer where custid=?");
 		pstmt.setString(1, username);
@@ -42,7 +42,7 @@ public class CustomerService {
 
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		Connection conn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;database=java", "sa",
-				"10105566");
+				"passw0rd");
 		PreparedStatement pstmt = conn
 				.prepareStatement("select convert(varchar,password) as password from customer where custid=?");
 		pstmt.setString(1, username);

@@ -12,7 +12,7 @@ import model.CustomerDAO;
 public class CustomerDAOJdbc implements CustomerDAO {
 	private static final String URL = "jdbc:sqlserver://localhost:1433;database=java";
 	private static final String USERNAME = "sa";
-	private static final String PASSWORD = "10105566";
+	private static final String PASSWORD = "passw0rd";
 
 	private static final String SELECT_BY_PK = "select * from customer where custid=?";
 

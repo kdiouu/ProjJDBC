@@ -12,17 +12,16 @@ public class CustomerDAODEMO {
 	public static void main(String[] args) throws Exception {
 
 		CustomerDAO dao = new CustomerDAOJdbc();
-
 		CustomerService cs = new CustomerService();
 
 		// Login
 //		cs.login("Alex", "A");
 
 		// ChangePSW
-//		Boolean x = cs.changePassword("Alex", "A", "X");
-//		if(x==true) {
-//		System.out.println("change password success!");
-//		}
+		Boolean x = cs.changePassword("Alex", "X", "A");
+		if(x==true) {
+		System.out.println("change password success!");
+		}
 		
 		// Findbyprimarykey
 //		CustomerBean result = dao.findByPrimaryKey("Alex");
