@@ -18,7 +18,7 @@ public class CustomerDAODEMO {
 //		cs.login("Alex", "A");
 
 		// ChangePSW
-		Boolean x = cs.changePassword("Alex", "X", "X");
+		Boolean x = cs.changePassword("Alex", "A", "B");
 		if(x==true) {
 		System.out.println("change password success!");
 		}

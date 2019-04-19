@@ -55,6 +55,7 @@ public class CustomerDAOJdbc implements CustomerDAO {
 		int updatecheck = pstmt.executeUpdate();
 		pstmt.close();
 		conn.close();
+		
 		if (updatecheck != 1) {
 			return false;
 		} else {
