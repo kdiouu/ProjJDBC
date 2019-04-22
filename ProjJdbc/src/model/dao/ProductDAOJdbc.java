@@ -18,7 +18,7 @@ import model.ProductDAO;
 public class ProductDAOJdbc implements ProductDAO {
 	private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=Java";
 	private static final String USERNAME = "sa";
-	private static final String PASSWORD = "passw0rd";
+	private static final String PASSWORD = "10105566";
 
 	private static final String SELECT_BY_PK = "select * from product where id=?";
 
